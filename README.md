@@ -13,3 +13,20 @@ then I used the command:
 in this commit as u see I renamed some file's name
 I used this command:
 	git mv [old name] [new name]
+
+in this commit as u see I changed nothing, but I tasted the command:
+	git diff
+and
+	git diff HEAD
+
+the first one shows us a changes between our's last commit and our's untracked files
+the last one shows us a changes between our's last commit and our's staged files
+
+params of that's command:
+	--cached / --staged
+	--word-diff
+
+
+it would be grammar correct using this command:
+	git commit --amend --no-edit
+if u fixed problem from the last commit that made ur app unworking 
