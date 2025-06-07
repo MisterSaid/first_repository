@@ -30,3 +30,48 @@ params of that's command:
 it would be grammar correct using this command:
 	git commit --amend --no-edit
 if u fixed problem from the last commit that made ur app unworking 
+
+"
+	# вызов локальной справки по команде git diff
+	git diff --help
+
+	# вывод изменений после последнего коммита (не добавленных в индекс)
+	git diff
+
+	# вывод изменений после последнего коммита (включая добавленные в индекс)
+	git diff HEAD
+	
+	# вывод изменений, добавленных в индекс
+	git diff --staged
+	git diff --cached
+	
+	# фоматирование изменений по словам (а не по строкам)
+	git diff --word-diff
+	
+	# исключение пустых строк из вывода
+	git diff -w
+	
+	# вывод изменений после HEAD~1 (и до HEAD)
+	git diff HEAD~1
+	
+	
+	# указание хэша коммита для вывода изменений после него
+	git diff 8a8b14c
+	
+	# вывод разницы между двумя указанными коммитами
+	git diff 8a8b14c b0272be
+	
+	# вывод изменений в конкретном файле после указанного коммита
+	git diff HEAD~1 web_pages/index.html
+
+	# сравнение двух произвольных файлов (даже вне git-репозитория)
+	git diff index.html page2.html
+
+	# вызов локальной справки по команде git difftool
+	git difftool --help
+
+	# указание хэша коммита для вывода изменений после него с помощью утилиты difftool
+	git difftool 8a8b14c
+"
+
+
